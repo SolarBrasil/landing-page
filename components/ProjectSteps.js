@@ -30,7 +30,7 @@ export default function ProjectSteps() {
         {
             "Icon": BanknotesIcon,
             "title": "Homologação",
-            "description": "Depois da distribuidora de energia realizar e aprovar  a vistoria obrigatoria do projeto, o medior é trocado e você começa a gerar sua própria energia e economizar."
+            "description": "Depois da distribuidora de energia realizar e aprovar  a vistoria obrigatória do projeto, o medior é trocado e você começa a gerar sua própria energia e economizar."
         }
     ];
 
