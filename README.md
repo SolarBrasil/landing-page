@@ -1,6 +1,6 @@
 # Solar Brasil Landing Page from 2024
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/46648482-644c-4c80-bafb-872057e51b6b/deploy-status)](https://app.netlify.com/sites/next-dev-starter/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f6e9d3ae-4fcd-4b64-9381-375b80cc2b0c/deploy-status)](https://app.netlify.com/sites/clever-moxie-1b76e5/deploys)
 
 This is a [Next.js](https://nextjs.org/) v15 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and set up to be instantly deployed to [Netlify](https://url.netlify.com/SyTBPVamO)!
 
