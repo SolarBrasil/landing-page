@@ -12,7 +12,7 @@ export default function Header() {
                         <WhatsAppLogo/>
                         <span>WhatsApp</span>
                     </a>
-                    <a href="/login" className="self-center link">Entrar</a>
+                    {/*<a href="/login" className="self-center link">Entrar</a>*/}
                 </div>
             </nav>
         </section>
