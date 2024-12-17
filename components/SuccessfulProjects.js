@@ -133,7 +133,7 @@ export default function SuccessfulProjects() {
             </p>
 
 
-            <div className="grid grid-cols-1 lg:grid-cols-4 overflow-x-scroll gap-y-10 gap-x-5 justify-center">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-10 gap-x-5 justify-center">
                 {
                     projects.map((project, index) =>
                         <Project key={index} {...project}/>
