@@ -1,4 +1,17 @@
+import { Inter, Roboto_Mono  } from 'next/font/google'
 import 'styles/globals.css'
+
+const inter = Inter({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-inter',
+})
+
+const roboto_mono = Roboto_Mono({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-roboto-mono',
+})
 
 export const metadata = {
     title: 'Solar Brasil',
@@ -7,11 +20,7 @@ export const metadata = {
 
 export default function RootLayout({children,}) {
     return (
-        <html lang="pt">
-        <head>
-            <link rel="preconnect" href="https://rsms.me/"/>
-            <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
-        </head>
+        <html lang="pt" className={`${inter.variable} ${roboto_mono.variable}`}>
         <body>{children}</body>
         </html>
     )
