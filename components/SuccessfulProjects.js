@@ -104,7 +104,7 @@ export default function SuccessfulProjects() {
             "src": "/images/project_queijoleite.png",
             "name": "Laticínios Queijoleite",
             "power": "13.000 kWh/Mês",
-            "caption": "Fabricação de laticícios em Água Azul no Norte, PA."
+            "caption": "Fabricação de laticínios em Água Azul no Norte, PA."
         },
         {
             "Icon": ShoppingCartIcon,
@@ -132,8 +132,7 @@ export default function SuccessfulProjects() {
                 Alguns de nossos clientes com projetos de sucesso.
             </p>
 
-
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-10 gap-x-5 justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-5 justify-center">
                 {
                     projects.map((project, index) =>
                         <Project key={index} {...project}/>

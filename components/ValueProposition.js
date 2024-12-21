@@ -19,15 +19,17 @@ function BillLabel({title, value, condition}) {
 
 function Bill({billInfo, date, value, isGood}) {
     return (
-        <div className="bg-slate-100 text-slate-900 px-4 py-5 rounded">
+        <div className="flex flex-col bg-slate-100 text-slate-900 px-4 py-5 rounded gap-2">
             <header>
                 <span className="font-mono font-bold text-base">{billInfo.name}</span>
             </header>
+
             <p className="font-mono text-slate-900 font-bold text-sm">
                 {billInfo.address.line1}<br/>
                 {billInfo.address.line2}<br/>
                 {billInfo.address.line3}
             </p>
+
             <div className="flex flex-row justify-between">
                 <BillLabel title="Conta mês" value={date} condition={"neutral"}/>
                 <BillLabel title="Total a pagar" value={value} condition={isGood ? "good" : "bad"}/>
@@ -47,26 +49,28 @@ export default function ValueProposition() {
     };
 
     return (
-        <section className="flex flex-col-reverse lg:flex-row-reverse gap-20 lg:gap-44 justify-center items-center px-4 lg:px-0">
+        <section className="flex flex-col-reverse lg:flex-col-reverse xl:flex-row-reverse gap-20 xl:gap-44 justify-center items-center px-4 xl:px-0">
             <div className="flex flex-col gap-8 justify-center lg:max-w-lg">
                 <header>
                     <h3>Diminua sua conta</h3>
                 </header>
+
                 <p>
                     Gere sua própria energia e reduza a conta de luz. Economia garantida: Um investimento que se
                     paga com o tempo, proporcionando economia a longo prazo. Diga adeus às surpresas na conta de luz
                     e tenha mais autonomia sobre sua energia.
                 </p>
             </div>
-            <figure className="drop-shadow-2xl w-fit rounded-lg">
+
+            <figure className="drop-shadow-2xl w-fit aspect-[9:16] md:aspect-[378/565] rounded-lg">
                 <div className="inline-flex flex-col border rounded-lg gap-5 p-5 paper-shadow bg-white">
-                    <Bill billInfo={billInfo} date="01/2023" value="R$ 7.401.40" isGood={false}/>
+                    <Bill billInfo={billInfo} date="01/2023" value="R$ 7.401,40" isGood={false}/>
 
                     <div className="size-28 self-center">
                         <ArrowLongDownIcon/>
                     </div>
 
-                    <Bill billInfo={billInfo} date="02/2024" value="R$ 280.94" isGood={true}/>
+                    <Bill billInfo={billInfo} date="02/2024" value="R$ 280,94" isGood={true}/>
                 </div>
             </figure>
         </section>

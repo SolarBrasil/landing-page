@@ -2,16 +2,14 @@ import {ChatBubbleLeftRightIcon, WrenchScrewdriverIcon, BanknotesIcon} from "@he
 
 function Step({Icon, title, description}) {
     return (
-        <>
-            <div className="flex flex-col gap-6">
-                <figure className="size-16 text-blue-400">
-                    {<Icon/>}
-                </figure>
-                <div className="border-slate-500 border-t"></div>
-                <h4>{title}</h4>
-                <p>{description}</p>
-            </div>
-        </>
+        <div className="flex flex-col gap-6">
+            <figure className="size-16 text-blue-400">
+                {<Icon/>}
+            </figure>
+            <div className="border-slate-500 border-t"></div>
+            <h4>{title}</h4>
+            <p>{description}</p>
+        </div>
     )
 }
 
