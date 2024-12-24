@@ -15,7 +15,7 @@ export const metadata = {
 export default function Page() {
     return (
         <div className="container mx-auto px-0 lg:px-32">
-            <main className="flex flex-col gap-28 mt-8">
+            <main className="flex flex-col gap-24 lg:gap-28 mt-8">
                 <Header/>
 
                 <MainCTA/>

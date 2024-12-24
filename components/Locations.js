@@ -28,8 +28,7 @@ export default function Locations() {
     ];
 
     return (
-        <section
-            className="flex flex-col items-center gap-9 rounded-lg bg-indigo-50 dark:bg-sky-950 m-4 p-4 pt-8 lg:mx-0 lg:py-12 lg:px-56">
+        <section className="flex flex-col items-center gap-9 rounded-lg bg-indigo-50 dark:bg-sky-950 m-4 p-4 pt-8 lg:mx-0 lg:py-12 lg:px-56">
             <LogoMark/>
             <h3 className="text-center">
                 Sua Energia no Norte do Brasil
