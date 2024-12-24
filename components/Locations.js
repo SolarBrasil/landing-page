@@ -5,10 +5,10 @@ import LogoMark from "@components/logos/solarbrasil/LogoMark";
 function Location({size, src, name, url}) {
     return (
         <a className="flex flex-col items-center gap-6" href={url}>
-            <div className="rounded-full border-4 border-slate-50 hover:border-slate-900">
+            <div className="rounded-full border-4 border-slate-50 dark:border-slate-900 hover:border-slate-900 dark:hover:border-slate-50">
                 <Image src={src} width={size} height={size} className="rounded-full" alt={""}/>
             </div>
-            <p className="font-medium text-slate-900 hover:underline">{name}</p>
+            <p className="font-medium text-slate-900 dark:text-slate-50 hover:underline">{name}</p>
         </a>
     );
 }
@@ -29,7 +29,7 @@ export default function Locations() {
 
     return (
         <section
-            className="flex flex-col items-center gap-9 rounded-lg bg-indigo-50 m-4 p-4 pt-8 lg:mx-0 lg:py-12 lg:px-56">
+            className="flex flex-col items-center gap-9 rounded-lg bg-indigo-50 dark:bg-sky-950 m-4 p-4 pt-8 lg:mx-0 lg:py-12 lg:px-56">
             <LogoMark/>
             <h3 className="text-center">
                 Sua Energia no Norte do Brasil

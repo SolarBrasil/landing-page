@@ -28,7 +28,7 @@ export default function FAQ() {
             <header>
                 <h3>Perguntas Frequentes</h3>
             </header>
-            <div className="border-y border-slate-900 divide-y divide-slate-500">
+            <div className="border-y border-slate-500 divide-y divide-slate-500">
                 {faq.map((question, index) => <Question key={index} {...question}/>)}
             </div>
         </section>

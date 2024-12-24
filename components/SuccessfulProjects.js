@@ -26,9 +26,11 @@ function Project({Icon, src, name, power, caption}) {
 
                 <figcaption>
                     <div>
-                        <Icon className="size-8"/>
+                        <Icon className="size-8 text-slate-900 dark:text-slate-50"/>
                     </div>
-                    {caption}
+                    <span className="font-regular text-slate-900 dark:text-slate-50">
+                        {caption}
+                    </span>
                 </figcaption>
             </figure>
         </a>

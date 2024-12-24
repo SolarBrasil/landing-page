@@ -2,7 +2,7 @@ import {ArrowLongDownIcon} from "@heroicons/react/24/outline";
 
 function BillLabel({title, value, condition}) {
     const conditions = {
-        "neutral": {bg: "bg-yellow-300", border: "border-yellow-300"},
+        "neutral": {bg: "bg-yellow-300 dark:bg-amber-500", border: "border-yellow-300 dark:border-amber-500"},
         "good": {bg: "bg-green-500", border: "border-green-500"},
         "bad": {bg: "bg-red-400", border: "border-red-400"}
     }
@@ -19,12 +19,12 @@ function BillLabel({title, value, condition}) {
 
 function Bill({billInfo, date, value, isGood}) {
     return (
-        <div className="flex flex-col bg-slate-100 text-slate-900 px-4 py-5 rounded gap-2">
+        <div className="flex flex-col bg-slate-100 dark:bg-gray-800 text-slate-900 dark:text-slate-50 px-4 py-5 rounded gap-2">
             <header>
                 <span className="font-mono font-bold text-base">{billInfo.name}</span>
             </header>
 
-            <p className="font-mono text-slate-900 font-bold text-sm">
+            <p className="font-mono text-slate-900 dark:text-slate-50 font-bold text-sm">
                 {billInfo.address.line1}<br/>
                 {billInfo.address.line2}<br/>
                 {billInfo.address.line3}
@@ -63,10 +63,10 @@ export default function ValueProposition() {
             </div>
 
             <figure className="drop-shadow-2xl w-fit aspect-[9:16] md:aspect-[378/565] rounded-lg">
-                <div className="inline-flex flex-col border rounded-lg gap-5 p-5 paper-shadow bg-white">
+                <div className="inline-flex flex-col border border-slate-50 dark:border-gray-800 rounded-lg gap-5 p-5 paper-shadow bg-slate-50 dark:bg-gray-900">
                     <Bill billInfo={billInfo} date="01/2023" value="R$ 7.401,40" isGood={false}/>
 
-                    <div className="size-28 self-center">
+                    <div className="size-28 self-center text-slate-900 dark:text-slate-50">
                         <ArrowLongDownIcon/>
                     </div>
 
