@@ -3,7 +3,7 @@ import WhatsAppLogo from "@components/logos/WhatsAppLogo";
 
 export default function Header() {
     return (
-        <section>
+        <header>
             <nav className="flex flex-row justify-between items-center px-4 lg:px-0">
                 <LogoType className="h-5 text-slate-900 dark:text-slate-50"/>
 
@@ -15,6 +15,6 @@ export default function Header() {
                     {/*<a href="/login" className="self-center link">Entrar</a>*/}
                 </div>
             </nav>
-        </section>
+        </header>
     );
 }

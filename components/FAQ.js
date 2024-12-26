@@ -2,7 +2,7 @@ function Question({question, answer}) {
     return (
         <div className="flex flex-col gap-6 py-12">
             <header>
-                <h6>{question}</h6>
+                <p className="text-slate-900 dark:text-slate-50 text-2xl font-medium leading-tight">{question}</p>
             </header>
             <div className="max-w-4xl">
                 <p>{answer}</p>
@@ -26,7 +26,7 @@ export default function FAQ() {
     return (
         <section className="flex flex-col gap-24 px-4 lg:px-0">
             <header>
-                <h3>Perguntas Frequentes</h3>
+                <p className="text-slate-900 dark:text-slate-50 text-[40px] font-semibold leading-tight">Perguntas Frequentes</p>
             </header>
             <div className="border-y border-slate-500 divide-y divide-slate-500">
                 {faq.map((question, index) => <Question key={index} {...question}/>)}

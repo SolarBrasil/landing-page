@@ -30,9 +30,9 @@ export default function Locations() {
     return (
         <section className="flex flex-col items-center gap-9 rounded-lg bg-indigo-50 dark:bg-sky-950 m-4 p-4 pt-8 lg:mx-0 lg:py-12 lg:px-56">
             <LogoMark/>
-            <h3 className="text-center">
+            <p className="text-slate-900 dark:text-slate-50 text-[40px] font-semibold leading-tight text-center">
                 Sua Energia no Norte do Brasil
-            </h3>
+            </p>
             <p className="text-center">
                 Com clientes satisfeitos no Pará, Maranhão e Tocantins, a Solar Brasil está pronta para levar energia
                 limpa e economia para você também. Visite nossas lojas no Pará e Maranhão e descubra como a energia

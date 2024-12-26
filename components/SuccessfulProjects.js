@@ -6,9 +6,6 @@ function Project({Icon, src, name, power, caption}) {
         <a href="#" className="link-figure">
             <figure className="flex flex-col gap-3 lg:gap-6 relative">
                 <Image
-                    width={0}
-                    height={0}
-                    sizes="100vw"
                     className="w-full"
                     src={src}
                     alt={caption}
@@ -16,12 +13,12 @@ function Project({Icon, src, name, power, caption}) {
                 />
 
                 <blockquote className="w-full absolute top-0 left-0 text-sm">
-                    <h5 className="text-slate-50 bg-gradient-to-r from-slate-900 to-transparent pt-2 pl-2 rounded-t-lg">
+                    <p className="font-semibold text-2xl text-slate-50 bg-gradient-to-r from-slate-900 to-transparent pt-2 pl-2 rounded-t-lg">
                         {name}
-                    </h5>
-                    <h6 className="text-slate-50 bg-gradient-to-r from-slate-900 to-transparent pb-2 pl-2">
+                    </p>
+                    <p className="font-medium text-2xl text-slate-50 bg-gradient-to-r from-slate-900 to-transparent pb-2 pl-2">
                         {power}
-                    </h6>
+                    </p>
                 </blockquote>
 
                 <figcaption>
@@ -41,7 +38,7 @@ export default function SuccessfulProjects() {
     return (
         <section className="flex flex-col gap-8 px-4 lg:px-0">
             <header>
-                <h3>Quem confia na Solar Brasil</h3>
+                <p className="text-slate-900 dark:text-slate-50 text-[40px] font-semibold leading-tight">Quem confia na Solar Brasil</p>
             </header>
 
             <p>

@@ -52,7 +52,7 @@ export default function ValueProposition() {
         <section className="flex flex-col-reverse lg:flex-col-reverse xl:flex-row-reverse gap-20 xl:gap-44 justify-center items-center px-4 xl:px-0">
             <div className="flex flex-col gap-8 justify-center lg:max-w-lg">
                 <header>
-                    <h3>Diminua sua conta</h3>
+                    <p className="text-slate-900 dark:text-slate-50 text-[40px] font-semibold leading-tight">Diminua sua conta</p>
                 </header>
 
                 <p>

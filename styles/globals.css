@@ -25,11 +25,11 @@
     }
 
     h4 {
-        @apply font-semibold text-3xl ;
+        @apply font-semibold text-3xl;
     }
 
     h5 {
-        @apply font-semibold text-2xl ;
+        @apply font-semibold text-2xl;
     }
 
     h6 {
@@ -37,7 +37,7 @@
     }
 
     p {
-        @apply text-xl text-slate-500 dark:text-slate-400;
+        @apply text-xl text-slate-700 dark:text-slate-300;
     }
 }
 

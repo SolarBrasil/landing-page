@@ -14,10 +14,10 @@ export const metadata = {
 
 export default function Page() {
     return (
-        <div className="container mx-auto px-0 lg:px-32">
-            <main className="flex flex-col gap-24 lg:gap-28 mt-8">
-                <Header/>
+        <div className="container mx-auto flex flex-col gap-24 lg:gap-28 mt-8 px-0 lg:px-32">
+            <Header/>
 
+            <main className="flex flex-col gap-24 lg:gap-28">
                 <MainCTA/>
 
                 <ValueProposition/>
@@ -32,8 +32,9 @@ export default function Page() {
 
                 <LastCTA/>
 
-                <Footer/>
             </main>
+
+            <Footer/>
         </div>
     )
 }

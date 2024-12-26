@@ -35,7 +35,7 @@ export default function ProjectSteps() {
     return (
         <section className="flex flex-col gap-12 px-4 lg:px-0">
             <header>
-                <h3>Seu projeto, realizado</h3>
+                <p className="text-slate-900 dark:text-slate-50 text-[40px] font-semibold leading-tight">Seu projeto, realizado</p>
             </header>
             <div className="grid grid-cold-1 lg:grid-cols-3 gap-7">
                 {steps.map((step, index) => <Step key={index} {...step} />)}
