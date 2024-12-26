@@ -80,9 +80,9 @@ export const Projects = [
     {
         "Icon": HomeModernIcon,
         "src": QueijoLeite,
-        "name": "Laticínios Queijoleite",
+        "name": "Água Natuclara",
         "power": "13.000 kWh/Mês",
-        "caption": "Fabricação de laticínios em Água Azul no Norte, PA."
+        "caption": "Fabricação de águas envasadas em Curionópolis, PA."
     },
     {
         "Icon": ShoppingCartIcon,
