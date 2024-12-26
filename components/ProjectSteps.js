@@ -6,8 +6,9 @@ function Step({Icon, title, description}) {
             <figure className="size-16 text-blue-400">
                 {<Icon/>}
             </figure>
-            <div className="border-slate-500 border-t"></div>
-            <h4>{title}</h4>
+            <header className="border-slate-500 border-t pt-6">
+                <p className="text-slate-900 dark:text-slate-50 font-semibold text-3xl">{title}</p>
+            </header>
             <p>{description}</p>
         </div>
     )

@@ -8,7 +8,7 @@ export default function Header() {
                 <LogoType className="h-5 text-slate-900 dark:text-slate-50"/>
 
                 <div className="flex flex-row gap-20">
-                    <a href="/contatos/maraba" className="btn hidden">
+                    <a href="/contatos/maraba" className="btn hidden sm:flex">
                         <WhatsAppLogo/>
                         <span>WhatsApp</span>
                     </a>
